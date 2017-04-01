@@ -1,0 +1,287 @@
+<html>
+<head>
+<title>home</title>
+</head>
+<style>
+body{
+	font-family:"Microsoft YaHei UI";
+	overflow-x:hidden;
+}
+header{
+	background-color:#1c1c1c;
+	width:100%;
+	height:80px;
+	position: fixed;top: 0px; 
+	z-index:10; /* 层叠顺序，数值越大就越高。页面滚动的时候就不会被其他内容所遮挡。 */
+}
+.logo{
+	color:#fff;
+	font-size:18px;
+	font-weight:900;
+	position:relative;
+	left:2%;
+	top:26px;
+}
+nav{
+	position:relative;
+	position:relative;
+	left:94%;
+	top:5px;
+}
+nav a{
+	text-decoration:none;
+	color:#999;
+}
+
+/*section*/
+section{
+	margin-bottom:0px;
+	position:relative;
+	top:0px;
+	width:100%;
+	height:600px;
+	background-image:url(image/pic15.jpg);
+	background-size:cover;
+	background-position:0% 50%;
+}
+.banner-inner{
+	text-align:center;
+	position:relative;
+	top:220px;
+	color:#fff;
+	font-size:24px;
+}
+/*for all ul*/
+ul li{
+	position:relative;
+	left:42%;
+	
+	list-style-type:none;
+	
+}
+ul li a{
+	position:relative;
+	top:4px;
+	text-decoration:none;
+	color:#fff;
+}
+
+/*the hidden menu*/
+.visible{
+	display:none;
+	box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+	background-color:#1c1c1c;
+	width:400px;
+	height:100%;
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:20;
+}
+.visible img{
+	width:25px;
+	height:25px;
+	position:relative;
+	left:86%;
+	top:20px;
+}
+.visible ul{
+	
+	position:relative;
+	left:-140px;
+	top:60px;
+	text-align:left;
+}
+.visible ul li{
+	margin-top:40px;
+	height:30px;
+	width:90%;
+	/*background-color:#333;*/
+	border-bottom:1px solid #666;
+	visibility: visible;
+	
+}
+/*article*/
+article{
+	width:100%;
+	height:1300px;
+	background-color:#333;
+}
+.article-wrapper{
+	width:70%;
+	position:relative;
+	left:15%;
+	top:100px;
+}
+.heading{
+	font-size:33px;
+	font-weight:800;
+	color:#1abc9c;
+}
+.info{
+	width:100%;
+	height:28px;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	font-size:18px;
+	font-weight:100;
+	color:#666;
+	position:relative;
+	top:20px;
+	
+}
+.info a{
+	text-decoration:none;
+	color:#1abc9c;
+	font-weight:300;
+}
+.passage-wrapper{
+	width:100%;
+	height:50%;
+	position:relative;
+	top:100px;
+	overflow:scroll;
+	overflow-x:hidden;
+	border:1px solid#666;
+}
+
+
+
+.border-line{
+	width:100%;
+	height:30px;
+	border-bottom:1px solid #666;
+	position:relative;
+	top:150px;
+	font-size:16px;
+	color:#1abc9c;
+}
+#comment{
+	background-color:#333;
+	width:100%;
+	height:100px;
+	position:relative;
+	top:180px;
+	border-radius:5px;
+}
+#sendmessage{
+	background-color:#999;
+	border-radius:5px;
+	
+	position:relative;
+	left:100px;
+	top:20px;
+}
+/*footer*/
+footer{
+	width:100%;
+	height:100px;
+	background-color:#111;
+}
+.record{
+	width:70%;
+	height:60%;
+	height:100px;
+	color:#999;
+	position:relative;
+	left:15%;
+	top:-100px;
+	background-color:#333;
+	border:1px solid#666;
+	border-radius:5px;
+}
+#record-area{
+	width:100%;
+	background:#333;
+}
+.block{
+	width:100%;
+	height:50px;
+}
+</style>
+<body>
+<header id="header">
+    <div class="logo">
+   		 Konroy
+    </div>
+    <nav>
+    <a	id="menu-button" href="#menu">Menu</a>
+    </nav>
+</header>
+<section id="banner">
+	<div class="banner-inner">
+    	
+    </div><!--inner-->
+</section>
+
+<article class="article">
+	<div class="article-wrapper">
+    	<div class="heading">
+    	Title Of The Passage Here
+    </div>
+    <div class="info">
+    	3 days ago by <a href="#">Konroy</a>
+    </div>
+	<div class="passage">
+    	<div class="passage-wrapper">
+        	     	content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content     	content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content     	content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content     	content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content
+        </div><!--passage-wrapper-->
+    </div>
+    
+    <div class="border-line">Comment</div>
+    <textarea id="comment"  >
+    </textarea>
+    
+    <input type="button" id="sendmessage" value="Send"/>
+    </div><!--article-wrapper-->
+    
+    
+</article>
+
+<div id="record-area"></div>
+
+<footer>
+</footer>
+<div id="menu" class="visible" >
+	<img id="back" src="image/back.png"/>
+	<ul class="link">
+    	<li><a href="index.html">HOME</a></li>
+        <li><a href="details.html">Details</a></li>
+    </ul>
+</div>
+<script>
+	var mbutton=document.getElementById("menu-button");
+	var menu=document.getElementById("menu");
+	var back=document.getElementById("back");
+	mbutton.onclick=function(){
+		menu.style.display="block";
+	}
+	back.onclick=function(){
+		menu.style.display="none";
+	}
+	
+	var recordarea=document.getElementById("record-area");
+	var message=document.getElementById("comment");
+	var sendmes=document.getElementById("sendmessage");
+	sendmes.onclick=function(){
+		if(!message.value==''){
+				
+			var block=document.createElement("div");
+			block.className="block";
+			var record=document.createElement("div");
+			record.className="record";
+			record.innerHTML=message.value;
+			message.value="";
+			alert("Comment send successfully!");
+			
+			
+			recordarea.appendChild(record);
+			recordarea.appendChild(block);
+		
+		}else{
+			alert("no comment is send!")
+		}
+	}
+</script>
+</body>
+</html>

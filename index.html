@@ -1,0 +1,355 @@
+<html>
+<head>
+<title>home</title>
+</head>
+<style>
+body{
+	font-family:"Microsoft YaHei UI";
+	overflow-x:hidden;
+}
+header{
+	background-color:#1c1c1c;
+	width:100%;
+	height:80px;
+	position: fixed;top: 0px; 
+	z-index:10; /* 层叠顺序，数值越大就越高。页面滚动的时候就不会被其他内容所遮挡。 */
+}
+.logo{
+	color:#fff;
+	font-size:18px;
+	font-weight:900;
+	position:relative;
+	left:2%;
+	top:26px;
+}
+nav{
+	position:relative;
+	position:relative;
+	left:94%;
+	top:5px;
+}
+nav a{
+	text-decoration:none;
+	color:#999;
+}
+
+/*section*/
+section{
+	margin-bottom:0px;
+	position:relative;
+	top:0px;
+	width:100%;
+	height:600px;
+	background-color:#48a2f6;
+}
+.banner-inner{
+	text-align:center;
+	position:relative;
+	top:220px;
+	color:#fff;
+	font-size:24px;
+}
+/*for all ul*/
+ul li{
+	position:relative;
+	left:42%;
+	
+	list-style-type:none;
+	
+}
+ul li a{
+	position:relative;
+	top:4px;
+	text-decoration:none;
+	color:#fff;
+}
+.continue{
+	
+	width:140px;
+	height:40px;
+	border:1.5px solid#82c0fa;
+	border-radius:3px;
+}
+/*article*/
+article{
+	
+	width:100%;
+	height:700px;
+	margin-top:0px;
+}
+.left{
+	height:100%;
+	width:55%;
+}
+.right{
+	height:100%;
+	width:45%;
+	position:relative;
+	left:55%;
+	top:-100%;
+	background-color:#333;
+}
+.image{
+	width:100%;
+	height:100%;
+	background-image:url(image/pic15.jpg);
+	background-size:cover;
+}
+.description{
+	width:60%;
+	height:50%;
+	position:relative;
+	left:15%;
+	top:30%;
+}
+.heading a{
+	text-decoration:none;
+	font-size:33px;
+	font-weight:800;
+	color:#1abc9c;
+}
+
+.info{
+	width:100%;
+	height:28px;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	font-size:18px;
+	font-weight:100;
+	color:#666;
+	position:relative;
+	top:20px;
+	
+}
+.info a{
+	text-decoration:none;
+	color:#1abc9c;
+	font-weight:300;
+}
+/*style1*/
+/*.left1{ 
+	background-color:#F00;
+}
+.right1{ 
+	background-color:#FF0;
+}
+*/
+.des1{
+	text-align:right;
+}
+.des2{
+	text-align:left;
+}
+.passage1{
+	overflow: hidden;
+	width:90%;
+	height:40%;
+	/*background-color:#666;*/
+	position:relative;
+	top:60px;
+	left:10%;
+	color:#666;
+}
+.more{
+	border-radius:5px;
+	border:1px solid #1abc9c;
+	width:60px;
+	height:30px;
+	font-size:12px;
+	text-align:center;
+	position:relative;
+	top:80px;
+	
+}
+.more a {
+	 text-decoration:none;
+	 color:#1abc9c
+}
+
+.more1{
+	position:relative;
+	left:380px;
+}
+/*style2*/
+/*.left2{ 
+	background-color:#00C;
+}
+.right2{ 
+	background-color:#0F0;
+}
+*/
+
+
+.passage2{
+	overflow: hidden;
+	width:90%;
+	height:40%;
+	/*background-color:#666;*/
+	position:relative;
+	top:60px;
+	left:0%;
+	color:#666;
+}
+footer{
+	width:100%;
+	height:100px;
+	background-color:#111;
+}
+/*the hidden menu*/
+.visible{
+	display:none;
+	box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+	background-color:#1c1c1c;
+	width:400px;
+	height:100%;
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:20;
+}
+.visible img{
+	width:25px;
+	height:25px;
+	position:relative;
+	left:86%;
+	top:20px;
+}
+.visible ul{
+	
+	position:relative;
+	left:-140px;
+	top:60px;
+	text-align:left;
+}
+.visible ul li{
+	margin-top:40px;
+	height:30px;
+	width:90%;
+	/*background-color:#333;*/
+	border-bottom:1px solid #666;
+	visibility: visible;
+	
+}
+</style>
+<body>
+<header id="header">
+    <div class="logo">
+   		 Konroy
+    </div>
+    <nav>
+    <a	id="menu-button" href="#menu">Menu</a>
+    </nav>
+</header>
+<section id="banner">
+	<div class="banner-inner">
+    	<h1>Blog By Konroy
+        	<br />
+            Marking Down Those New Things
+        </h1>
+        <ul class="action">
+        	<li>
+            	<div class="continue">
+                	<a href="#one" class="button alt scrolly big">
+                    Continue
+                    </a>
+                </div>
+            	
+            </li>
+        </ul>
+    </div><!--inner-->
+</section>
+<article id="one" class="style1">
+	<div class=" left left1">
+    	<div class="description des1">
+                <div class="heading"><a href="details.html">Title Of The Passage</a></div>
+                <div class="info">
+                    3 days ago by <a href="#">Konroy</a>
+                </div>
+                <div class="passage1">
+                	     	content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content
+                </div>
+                <div class="more more1"><a href="details.html">Read More</div>
+        </div>
+    </div><!--left1-->
+    <div class=" right right1">
+    	<div class="image">
+        </div>
+    </div><!--right1-->
+</article>
+<article id="two" class="style2">
+	<div class="left left2">
+    	<div class="image">
+        </div>
+    </div><!--left2-->
+    <div class="right right2">
+    	<div class="description des2">
+                <div class="heading"><a href="details.html">Title Of The Passage</a></div>
+                <div class="info">
+                    3 days ago by <a href="#">Konroy</a>
+                </div>
+                <div class="passage2">
+                	     	content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content
+                </div> 
+                <div class="more"><a href="details.html">Read More</div>
+        </div>
+    </div><!--right2-->
+</article>
+<article id="one" class="style1">
+	<div class=" left left1">
+    	<div class="description des1">
+                <div class="heading"><a href="details.html">Title Of The Passage</a></div>
+                <div class="info">
+                    3 days ago by <a href="#">Konroy</a>
+                </div>
+                <div class="passage1">
+                	     	content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content
+                </div>
+                 <div class="more more1"><a href="details.html">Read More</div>
+        </div>
+    </div><!--left1-->
+    <div class=" right right1">
+    	<div class="image">
+        </div>
+    </div><!--right1-->
+</article>
+<article id="two" class="style2">
+	<div class="left left2">
+    	<div class="image">
+        </div>
+    </div><!--left2-->
+    <div class="right right2">
+    	<div class="description des2">
+                <div class="heading"><a href="details.html">Title Of The Passage</a></div>
+                <div class="info">
+                    3 days ago by <a href="#">Konroy</a>
+                </div>
+                <div class="passage2">
+                	content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content
+                </div>
+                 <div class="more"><a href="details.html">Read More</div>
+        </div>
+    </div><!--right2-->
+</article>
+
+<footer>
+</footer>
+<div id="menu" class="visible" >
+	<img id="back" src="image/back.png"/>
+	<ul class="link">
+    	<li><a href="index.html">HOME</a></li>
+        <li><a href="details.html">Details</a></li>
+    </ul>
+</div>
+<script>
+	var mbutton=document.getElementById("menu-button");
+	var menu=document.getElementById("menu");
+	var back=document.getElementById("back");
+	mbutton.onclick=function(){
+		menu.style.display="block";
+	}
+	back.onclick=function(){
+		menu.style.display="none";
+	}
+</script>
+</body>
+</html>
